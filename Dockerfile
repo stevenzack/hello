@@ -1,4 +1,4 @@
-FROM go as builder-stage
+FROM golang as builder-stage
 WORKDIR /root
 ADD . .
 RUN go test -v ./...
